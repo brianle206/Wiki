@@ -1,0 +1,7 @@
+<div class='container'>
+  <h1>Welcome <%= @user[:first_name] %></h1> <a href="/logout" class='btn btn-secondary'>Log Out</a>
+  <h4>Start your claim</h4>
+  <%= form_for @user, url: {action: "create"} do |person_form| %>
+  <%= person_form.text_field :first_name %>
+  <% end %>
+</div>

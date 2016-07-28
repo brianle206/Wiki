@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="w-section banner-section">
+    <div class="w-row">
+      <div class="w-col w-col-9 w-col-small-9 w-col-tiny-9 w-clearfix head-banner-columns">
+      
+
+        <h3 class="header-banner">$5.99 FedEx Ground Shipping Special!</h3><p class="white-disclaimer">Valid on orders over $59.99 in the contiguous US only. Valid until 7/15/16. <a id='popUp'><i class="fa fa-exclamation-circle" aria-hidden="true"></i> More details.</a></p>
+      </div>
+      <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3">
+        <form action='/session' name='session'>
+          <input type="hidden" name="authenticity_token" value='<%= form_authenticity_token %>'>
+          <input type="submit" name="kill" value='kill'>
+        </form>
+        <form action='/session/set' name='session'>
+          <input type="hidden" name="authenticity_token" value='<%= form_authenticity_token %>'>
+          <input type="submit" name="set" value='set'>
+        </form>
+        <form action='/session/load' name='session'>
+          <input type="hidden" name="authenticity_token" value='<%= form_authenticity_token %>'>
+          <input type="submit" name="load" value='load'>
+        </form>
+        <form action='/check' name='checker'>
+          <input type="hidden" name="authenticity_token" value='<%= form_authenticity_token %>'>
+          <input type="submit" name="checker" value='checker'>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class='hideMe' id='details'>
+  <p>Our summer shipping special uses FedEx ground. Orders shipped to the contiguous US stated including $59.99 or more of RAM Products qualify for $5.99 FedEx Ground Shipping. This offer excludes Hawaii, Alaska & U.S. Territories. </p>
+
+  <p>To place an order online, do the following:<br>
+  1. Add at least $59.99 to your Shopping Cart. <br>
+  2. Upon checkout (after adding your address) select FedEx Ground Shipping.<br></p>
+</div>

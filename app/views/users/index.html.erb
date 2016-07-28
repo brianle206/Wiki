@@ -1,0 +1,25 @@
+<div class='container'>
+  <h1>WaRAMty&trade;</h1>
+  <h2>Login</h2>
+  <form action='login'>
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    <input type="text" name="email" placeholder='Email'>
+    <input type="password" name="password" placeholder='Password'>
+    <input type="submit" name="submit" class='btn btn-primary'>
+  </form>
+  <h2>Create</h2>
+  <form action='create'>
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    <input type="text" name="first_name" placeholder="First Name">
+    <input type="text" name="last_name" placeholder="Last Name">
+    <input type="text" name="email" placeholder='Email'>
+    <input type="password" name="password" placeholder='Password'>
+    <input type="submit" name="submit" class='btn btn-primary'>
+  </form>
+</div>
+
+<form action='wiki'>
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <input type='text' placeholder='Title' name='title'>
+  <input type='submit' name='submit' class='btn btn-primary'>
+</form>

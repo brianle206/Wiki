@@ -1,0 +1,7 @@
+<h1>Session</h1>
+<p><%= cookies[:promo] %></p>
+<% if cookies[:promo] %>
+  <%= render 'banner' %>
+  <% else %>
+  <%= render 'banner2' %>
+<% end %>
