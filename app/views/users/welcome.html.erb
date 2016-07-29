@@ -1,0 +1,12 @@
+<div class='container'>
+Welcome <%= @user.first_name %>
+
+<a href="/wiki/all">Go to Wiki</a>
+Create new Wiki Page here!
+  <form action='/create/wiki'>
+    <input type="hidden" name="authenticity_token" value='<%= form_authenticity_token %>'>
+    <label>Title</label>
+    <input type="text" name="title">
+    <input type="submit" name="submit" value='Create'>
+  </form>
+</div>

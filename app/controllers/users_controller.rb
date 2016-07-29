@@ -8,7 +8,7 @@ class UsersController < ApplicationController
   def create
     @user = User.create(first_name:params[:first_name], last_name:params[:last_name], email:params[:email], password:params[:password])
     if @user.save == true
-      redirect_to '/'
+      redirect_to '/welcome'
     else
       redirect_to '/'
     end
@@ -19,6 +19,8 @@ class UsersController < ApplicationController
   end
   def upload
   end
-
+  def welcome
+    @user = User.last()
+  end
 end
 

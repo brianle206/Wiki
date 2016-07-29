@@ -10,7 +10,8 @@ Rails.application.routes.draw do
   get '/create' => 'users#create'
   get '/logout' => 'users#logout'
   post '/wiki' => 'wiki#new/:title'
-
+  get '/welcome' => 'users#welcome'
+  get '/create/wiki' => 'wiki_pages#new_page'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

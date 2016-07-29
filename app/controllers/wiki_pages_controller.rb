@@ -1,7 +1,10 @@
 class WikiPagesController < ApplicationController
 
 acts_as_wiki_pages_controller
-
+  def new_page
+    @title = params[:title]
+    redirect_to "/wiki/new/#{@title}"
+  end
   # def show_allowed?
   #   # true # Show page to all users
   # end
